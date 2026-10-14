@@ -1,0 +1,24 @@
+{
+  "data":[
+    {
+      "id": 1,
+      "nombre": "Adaptador wifi",
+      "image": "adapter-wifi.webq",
+      "description": "pollo"
+    },
+    {
+      "id": 2,
+      "nombre": "Flipper Zero",
+      "image": "flipper.jpg",
+      "description": "pollo"
+    },
+    {
+      "id": 3,
+      "nombre": "Usbe Key",
+      "image": "usbkey.jpg",
+      "description": "pollo"
+    }
+
+  ]
+
+}
