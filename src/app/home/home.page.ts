@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent } from '@ionic/angular';
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/angular';
+import { IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/angular';
 import { Estudiante } from "../Clases/estudiante";
 import { Perro } from "../Clases/perro";
 
@@ -11,7 +11,7 @@ import { Perro } from "../Clases/perro";
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons, IonMenuButton,
-    IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonButtons
+    IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonButtons
     ]
 })
 export class HomePage implements OnInit {

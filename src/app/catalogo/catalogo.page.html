@@ -7,16 +7,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+
   <ion-row>
-    <ion-col size="12" sizeMd="6" sizeLg="4" *ngFor="let item of items">
-      <ion-card class="ion-padding">
-        <ion-text>
-          <h2>{{ item.name || item.title || 'Item' }}</h2>
-          <p>{{ item.description || '' }}</p>
-          <p *ngIf="item.price"><b>Price:</b> {{ item.price }}</p>
-        </ion-text>
+    <ion-col size="12" sizeMd="6" sizeLg="4" *ngFor="let itesm of items">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{item.nombre}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <img [src]="item.image" alt="{{item.nombre}}">
+          <ion-text>{{item.nombre}}</ion-text>
+        </ion-card-content>
       </ion-card>
     </ion-col>
   </ion-row>
+
 </ion-content>
