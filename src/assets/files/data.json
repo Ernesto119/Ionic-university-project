@@ -4,19 +4,24 @@
       "id": 1,
       "nombre": "Adaptador wifi",
       "image": "assets/img/adapter-wifi.webp",
-      "description": "pollo"
+      "description": "pollo",
+      "telefono": "809-555-5555"
     },
     {
       "id": 2,
       "nombre": "Flipper Zero",
       "image": "assets/img/flipper.jpg",
-      "description": "pollo"
+      "description": "pollo",
+      "telefono": "809-555-5555"
+
     },
     {
       "id": 3,
       "nombre": "Usbe Key",
       "image": "assets/img/usbkey.jpg",
-      "description": "pollo"
+      "description": "pollo",
+      "telefono": "809-555-5555"
+
     }
 
   ]

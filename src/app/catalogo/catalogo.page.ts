@@ -5,7 +5,7 @@ import {
   IonContent, IonHeader, IonTitle, IonToolbar, IonMenuButton,
   IonButtons, IonRow, IonText, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardContent
 } from '@ionic/angular';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { map, firstValueFrom } from 'rxjs';
 
@@ -16,7 +16,7 @@ import { map, firstValueFrom } from 'rxjs';
   imports: [
     IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
      IonMenuButton,  IonButtons, IonRow, IonText, IonCol, IonCard,
-    IonCardHeader, IonCardTitle, IonCardContent,
+    IonCardHeader, IonCardTitle, IonCardContent, RouterModule
   ]
 })
 export class CatalogoPage implements OnInit {

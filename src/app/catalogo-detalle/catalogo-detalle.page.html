@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ nombre }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <img
+        [src]="image"
+        [alt]="nombre"
+        style="width: 100%; height: auto; border-radius: 8px"
+      />
+      <ion-card-title class="ion-margin-top">{{ nombre }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-text>
+        <p>{{ description }}</p>
+      </ion-text>
+
+      <ion-row class="ion-margin-top">
+        <ion-col size="4">
+          <ion-button expand="block" color="primary" (click)="llamar(telefono)">
+            <ion-icon name="call-outline" slot="start"></ion-icon>
+            Llamar
+          </ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button
+            expand="block"
+            color="success"
+            (click)="abrirWhatsapp(telefono)"
+          >
+            <ion-icon name="logo-whatsapp" slot="start"></ion-icon>
+            WhatsApp
+          </ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button expand="block" color="tertiary" (click)="abrirMapa()">
+            <ion-icon name="location-outline" slot="start"></ion-icon>
+            Mapa
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
